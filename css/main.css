@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+#wrap{}
+
+
+/* header 영역 */
+#header{
+    width: 100%;
+    height: 148px;
+    border-bottom: 2px solid darkred;
+    position: relative;
+}
+
+.head_inner{
+    width: 940px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative; /* logo positioning */
+}
+
+.util{float: left; margin-top: 10px;}
+.util li{display: inline-block;margin-right: 10px;}
+.util li a{}
+.util li a img{}
+
+.topmenu{float: right; margin-top: 10px;}
+.topmenu li{display: inline-block;margin-left: 10px;}
+.topmenu li a{
+    font-size: 12px;
+}
+.topmenu li a:hover{
+    font-size: 12px;
+    color: #666;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+
+.nav{
+    padding-top: 90px;
+}
+
+.main{}
+
+.main > li{
+    float: left;
+    width: calc(100% / 6);
+    text-align: center;
+    /* border: 1px solid orange; */
+    position: relative; /* sub positioning */
+    /* margin-top: 20px; */
+}
+
+.main > li > a{
+    display: block;
+    transition: all 0.5s;
+    padding: 12px 0;
+}
+
+.main > li > a img{
+    display: inline-block;
+}
+
+.main > li > a span{
+    font-size: 11px;
+    display: block;
+    color: white;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.main > li:hover > a{
+    background-color: red;
+}
+
+.main > li:hover > a img{
+    filter: invert(100%) brightness(200%);
+}
+
+.main > li:hover > a span{
+    display: block;
+    opacity: 1;
+}
+
+.sub{
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    z-index: 101;
+    display: none;
+}
+
+.sub li{}
+
+.sub li a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #ddd;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.sub li a:hover{
+    color: white;
+    text-decoration: underline;
+    text-shadow: 0 0 5px white , 0 0 10px beige , 0 0 15px beige , 0 0 20px wheat;
+}
+
+.sub_bg{
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    top: 148px;
+    z-index: 100;
+    display: none;
+}
+
+/* main_slide 영역 */
+.main_slide{
+    width: 100%;
+    height: 480px;
+    position: relative; /* slick-dots positioning */
+}
+
+.move{
+    height: 480px;
+}
+
+.move .slick-slide{
+    height: 480px;
+}
+.move .slick-slide a{
+    display: block;
+    height: 480px;
+}
+.move .slick-slide a img{
+    width: 100%;
+}
+
+.move .slick-dots{
+    position: absolute;
+    z-index: 7;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.move .slick-dots li{
+    float: left;
+    margin: 5px;
+    width: 100px;
+    
+}
+.move .slick-dots li button{
+    margin: 0 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    text-indent: -9999px;
+    box-shadow: 0 0 5px red , inset 0 0 10px orange;
+    transition: all 0.3s;
+}
+.move .slick-dots li.slick-active button{
+    width: 80px;
+    background-color: lime;
+}
+
+/* 컨텐츠 영역 */
+
+.main_inner{
+    width: 940px;
+    margin: 50px auto;
+}
+
+.cont01{}
+
+.cont01_list{
+    display: flex;
+    justify-content: space-between;
+}
+.cont01_list li{}
+.cont01_list li h3{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.cont01_list li p{}
+
+.franchise{
+    width: 225px;
+    height: 272px;
+    background-color: #faf9f7;
+}
+
+.mall{
+    width: 460px;
+    height: 272px;
+}
+
+.mall > p{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.mall_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+.mall_list li:nth-child(2){
+    border-left: 1px dotted #ddd;
+    border-right: 1px dotted #ddd;
+}
+.mall_list li a{}
+.mall_list li a img{
+    width: 80%;
+}
+.mall_list li a p{
+    font-size: 12px;
+}
+
+.store{
+    width: 240px;
+    height: 272px;
+    background-color: #faf9f7;
+}
+
+/* cont02 영역 */
+
+.cont02{
+    height: 152px;
+    margin: 50px 0 20px;
+}
+
+.cont02_list{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 30px 0; */
+}
+.cont02_list li{}
+
+/* cont03 영역 */
+
+.cont03{}
+
+.cont03_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont03_list > li{
+    width: 24%;
+}
+
+.cont03_list h3{
+    margin-bottom: 10px;
+}
