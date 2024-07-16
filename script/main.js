@@ -18,5 +18,10 @@ $(function(){
         adaptiveHeight:true
     })
 
+    //팝업
+    $(".close").click(function(){
+        $(".popup").hide();
+    })
+
 
 })

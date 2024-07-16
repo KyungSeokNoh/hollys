@@ -262,3 +262,187 @@
 .cont03_list h3{
     margin-bottom: 10px;
 }
+
+.event_list{}
+
+.event_list li{
+    line-height: 1.8;
+}
+
+.event_list li a{
+    float: left;
+    width: 70%;
+
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+
+    /* text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+    3개가 같이 사용해야함. */
+}
+
+.event_list li span{
+    float: right;
+}
+
+.b2b p{
+    line-height: 1.7;
+    text-align: justify;
+    /* letter-spacing: -2px; */
+    word-spacing: -1px;
+}
+
+.more{
+    margin-top: 5px;
+}
+
+/* news 영역 */
+
+.table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table td{
+    padding: 5px 0;
+}
+
+.col01{
+    width: 75%;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.col02{
+    width: 25%;
+    text-align: right;
+}
+
+/* notice 영역 */
+
+.notice_list{
+    text-align: right;
+}
+
+.notice_list li{
+    display: inline-block;
+    text-align: center;
+}
+
+.notice_list li a{
+    display: block;
+}
+
+.notice_list li:nth-child(1) a{
+    border-right: 1px dotted gray;
+    padding-right: 20px;
+}
+
+.notice_list li:nth-child(1) span{
+    padding-right: 20px;
+}
+
+.notice_list li span{
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* cont04 영역 */
+.cont04{
+    margin: 50px 0;
+    padding: 50px 0;
+    border-top: 3px solid red;
+}
+
+.cont04 img{
+    vertical-align: bottom !important;
+}
+
+/* footer 영역 */
+
+#footer{
+    background-color: #ba000d;
+    padding: 20px 0;
+}
+
+.foot_inner{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.f_menu{
+    color: white;
+    font-size: 12px;
+}
+
+.f_menu li{
+    float: left;
+}
+
+.f_menu li a{
+    display: block;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: relative;
+}
+
+.f_menu li:first-child a{
+    padding-left: 0 !important;
+}
+
+.f_menu li a::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.f_menu li:last-child a::after{
+    display: none;
+}
+
+.address{
+    clear: both;
+    font-style: normal;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.float{
+    float: left;
+    position: fixed;
+    top: 50px;
+    left: calc(50% + 500px);
+    z-index: 1000;
+
+}
+
+.popup{
+    width: 500px;
+    height: 700px;
+    border: 10px solid black;
+    box-sizing: unset;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    z-index: 9999;
+}
+
+.close{
+    padding: 10px 30px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
